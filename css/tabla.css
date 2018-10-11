@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Palanquin', sans-serif;
+}
+.habitacion{
+    margin-bottom: -77px;
+}
+
+.item{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    color: #37454d;
+    background: #fff;
+}
+.item_galeria{
+    width: 100%;
+}
+.post{
+    position: relative;
+}
+.item_image{
+    float: left;
+    padding: 8px 4px 8px 8px;
+    width: 32.5%;
+}
+.item_img{
+    line-height: 0;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+}
+.item_galeria .item_column{
+    height: 100%;
+    display: flex;
+}
+.item_detalles{
+    position: relative;
+    padding: 8px 0 4px;
+    margin: 6px 8px 8px 4px;
+    float: none;
+    border-right: 1px solid #ebeced;
+}
+.item_name{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+}
+.item_name .name{
+    margin-top: 0;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.item_stars{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: 0 8px 0 0;
+}
+.item .text{
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.item .parrafo{
+    line-height: 1.25;
+    margin: 0 160px 0 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+.button-info{
+    width: 52%;
+    padding: 23px 56px 0px 62px;
+}
+.item .button-info .btn-info{
+    width: 100%;
+}
+.button-info .btn-info{
+    overflow: hidden;
+    width: 52%;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-repeat: no-repeat;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    margin: 4px 0;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 700;
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}

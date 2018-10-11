@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../js/materialize.js">
+    <title>Registro_Recepcionista</title>
+</head>
+
+<header>
+    <!-- barra de navegacion -->
+
+    <nav>
+        <div class="nav-wrapper container">
+
+            <a href="#!" class="brand-logo"><img class="logo-DAECA" src="../assets/logo-DAECA.png" alt=""></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="reservas.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="reservas.html">Habitaciones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+    </ul>
+</header>
+
+<body class="fondo1">
+
+
+    <h1 class="texto">FORMULARIO DE REGISTRO</h1>
+
+    <form action="Login.html" method="post" class="form-register">
+        <div class="contenedor-inputs">
+            <div class="caja">
+                <i class="material-icons iconos-form">picture_in_picture</i>
+                <input type="number" name="cedula" placeholder="Ingrese cedula" class="cajas2" required="">
+            </div>
+            <div class="div-cajas">
+                <i class="material-icons iconos-form">account_circle</i>
+                <input class="cajas" type="text" name="nombre" placeholder="Ingrese Nombre y Apellidos" required=""><br>
+            </div>
+            <div class="div-cajas">
+                <i class="material-icons iconos-form">email</i>
+                <input class="cajas" type="email" name="email" placeholder="Correo Electronico" required="">
+            </div>
+            <div class="div-cajas">
+                <i class="material-icons iconos-form">lock</i>
+                <input class="cajas" type="password" name="clave" placeholder="Contraseña" required="">
+            </div>
+            <div class="div-cajas">
+                <i class="material-icons iconos-form">phone</i>
+                <input class="cajas" type="number" name="telefono" placeholder="Teléfono" required="">
+            </div>
+        </div>
+        <center>
+            <input class="btn waves-effect" type="submit" value="Guardar">
+        </center>
+
+    </form>
+
+    <script src="../js/materialize.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/reg_rec.js"></script>
+
+
+</body>
+
+</html>
