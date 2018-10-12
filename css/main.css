@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 .FONDO1{
-     background-color: #0F1D2E;
+     background-color: rgba(176, 190, 197, 0.8);
 }
 nav{
     position: fixed;
     z-index: 3;
-    background: none;
+    background: #b92b27;
     width: 100%;
     line-height: 60px;
 }
@@ -27,12 +27,128 @@ nav{
 }
 
 .sidenav{
-    background-color: 	#008080;
+    background-color: 	#b92b27;
 }
 .sidenav li a{
     color: white;
 }
+/*login*/
+.loggin{
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.form{
+    position: relative;
+    background:rgb(185, 39, 39);
+    width: 100%;
+    max-width: 500px;
+    margin: 48x auto;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form .toggle{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid  rgba(176, 190, 197, 0.8);
+    border-bottom: 2px solid rgba(176, 190, 197, 0.8);
+    transition: all .5s ease;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.form .toggle span{
+    letter-spacing: 1px;
+}
+.form .toggle:hover{
+    border-top: 2px solid rgba(15, 29, 46, 0.73);
+    border-bottom: 2px solid rgba(15, 29, 46, 0.69);
+}
+
+/*fin de login*/
+
+
+/*registro*/
+
+
+.form h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid rgb(176, 190, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+
+.form input[type="submit"] {
+    background: rgb(176, 190, 197);
+    color: rgba(15, 29, 46, 0.67);
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.form input[type="submit"]:hover {
+    background: rgb(160, 174, 180);
+}
+
+.form .reset-password{
+    background: rgba(15, 29, 46, 0.4);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px; 
+    border-bottom-left-radius: 5px; 
+}
+
+.form .reset-password a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form .formulario{
+    padding: 40px;
+    display: none;
+}
+
+.form .formulario:nth-child(2){
+    display: block;
+}
 
 
 /***********INDEX*********************************/
@@ -47,14 +163,12 @@ nav{
     height: 700px;
 }
 .pag-inicio .DAECA2 h2{
-    font-size: 70px;
     font-family: "Pristina";
     color:  white;
     text-shadow: 1px 2px #0F1D2E;
     position: relative;
 }
 .pag-inicio .DAECA2 h3{
-    font-size: 30px;
     color: white;
     text-shadow: 1px 2px #0F1D2E;
     position: relative;
@@ -101,7 +215,7 @@ nav{
 
 /************************FOOTER******************************/
 .footer{
-    background-color: #0F1D2E;
+    background-color:#b92b27;
     width: 100%;
     height: 140px;
     border-top: 1px solid white;
@@ -122,7 +236,7 @@ nav{
     transition: 1s;
 }
 .footer .content1 .linksfo li a:hover{
-    color: #a67d4a;
+    color: #0F1D2E;
 }
 .footer .fot2{
     font-size: 14px;
@@ -150,15 +264,15 @@ nav{
 } 
 .footer .content2 .facebook:hover{
     background-color: rgb(0, 0, 104);
-    border: 2px solid #a67d4a;
+    border: 2px solid #0F1D2E
 }
 .footer .content2  .insta:hover{
     background-color: rgb(189, 0, 179);
-    border: 2px solid #a67d4a;
+    border: 2px solid #0F1D2E
 }
 .footer .content2  .twitter:hover{
     background-color: rgb(8, 164, 255);
-    border: 2px solid #a67d4a;
+    border: 2px solid #0F1D2E
 }
 
 .footer .content2 .facebook .responsive-img, .insta .responsive-img, .twitter .responsive-img{
@@ -261,81 +375,32 @@ nav{
 
 /**galeria*****/
 
-.gallery{
+.gallery {
     width: 100%;
     height: 415px;
     text-align: center;
     background-color: white;
+    top: -52px;
+    position: relative
 }
-.gallery .btn-img{
-    width: 100%;
-    background-color: none;
-}
-.gallery .btn-img img{
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-#modal {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 30;
-  float: left;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(15, 29, 46, 0.733);
-  display: none;
-  opacity: 0;
-}
-
-#modal>a {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-:target {
-  display: block!important;
-  opacity: 1!important;
-}
-#modalContent .cerrar{
-    position: absolute;
-    top: 18%;
-    right: 23%;
-    border-radius: 50%;
-    background: white;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-}
-#modalContent .cerrar .material-icons{
-    font-weight: bold;
-    font-size: 20px;
-    color: #0F1D2E;
-    margin: 6px;
-}
-.img-modal{
-    width: 700px;
-    height: 420px;
+.gallery .responsive-img{
     border: 2px solid white;
     border-radius: 5px;
-    text-align: center;
-    margin-top: 10%;
+    margin-top: 20px;
 }
-
 /*pagina de servicios*/
 .servicio .row{
     padding-bottom: 62px;
     margin-bottom: 0;
     border-bottom: solid 1px rgba(128, 128, 128, 0.651);
 }
+.servicio2 .row{
+    padding-bottom: 62px;
+    margin-bottom: 0;
+    border-top: solid 1px rgba(128, 128, 128, 0.651); 
+}
 section:nth-child(9).servicio .row{
-border-bottom: none;
+    border-bottom: none;
 }
 
 .img1{
@@ -352,7 +417,7 @@ border-bottom: none;
 .img1:hover img{
     transform: scale(1.2);
     overflow: hidden;
-  }
+}
 .content{
     margin-top: 80px;
 }
@@ -364,9 +429,109 @@ h1{
     text-align: center;
     font-size: 50px;
 }
-p{
+p   {
     color: white;
     text-align: justify; 
+}
+/*******************TABLA****************/
+.habitacion{
+    margin-bottom: -77px;
+}
+
+.item{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 87%;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    color: #37454d;
+    background: #fff;
+}
+.item_galeria{
+    width: 100%;
+}
+.post{
+    position: relative;
+}
+.item_image{
+    float: left;
+    padding: 18px 4px 4px 15px;
+    width: 46%;
+}
+.item_img{
+    line-height: 0;
+    overflow: hidden;
+}
+.item_img h3{
+    margin-top: 7px;
+    font-size: 20px;
+}
+img {
+    max-width: 100%;
+}
+.item_galeria .item_column{
+    height: 100%;
+    display: flex;
+}
+.item_detalles{
+    position: relative;
+    padding: 8px 0 4px;
+    margin: 20px 13px 8px 13px;  
+    float: none;
+}
+.item_name{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+}
+
+.item_stars{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: 0 8px 0 0;
+}
+.item .text{
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.item .parrafo{
+    line-height: 1.25;
+    margin: 0 160px 0 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+.button-info{
+    width: 52%;
+    padding: 23px 56px 0px 62px
+}
+.button-info .btn-info{
+    margin-left: -57%;
+}
+.button-info .btn-info2{
+    margin-left: 137%;
+    margin-top: -58%;
+}
+.button-info a{
+    color: #fff;
+    font-size: 16px;
+}
+.habitacion .fechas .datepicker{
+    margin-top: 15px;
+    width: 38%;
+    margin-right: 36px;
+}
+.btn-info2{
+    margin-top: 20px;
 }
 
 /*fin de servicios*/
@@ -376,7 +541,7 @@ p{
 @media only screen and (min-width:1200px){
     /*BARRA RESPONSIVE*/
     .nav-wrapper .brand-logo{
-        width: 12%;
+        width: 170px;
         position: relative;
         top: -12px;
         left: 50px;
@@ -387,8 +552,8 @@ p{
     }
     /*INDEX*/
     .pag-inicio .DAECA2 h2{
-        top: -8%
-       
+        top: -8%;
+        font-size: 70px;       
     }
     .pag-inicio .DAECA2 h2 {
         margin-top: -29%;
@@ -396,8 +561,12 @@ p{
     }
     .pag-inicio .DAECA2 h3{
         margin-left: 59px;
+        font-size: 30px;
     }
     /*FOOTER*/
+    .footer{
+        margin-top: -27px;
+    }
     .footer .content1{
         right: 40%;
     }
@@ -433,125 +602,7 @@ p{
     margin-right: -360px;
     }
     
-    
 }
-/*TABLA*/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Palanquin', sans-serif;
-}
-.habitacion{
-    margin-bottom: -77px;
-}
-
-.item{
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    margin-bottom: 8px;
-    box-shadow: 0 1px 4px rgba(41,51,57,.5);
-    color: #37454d;
-    background: #fff;
-}
-.item_galeria{
-    width: 100%;
-}
-.post{
-    position: relative;
-}
-.item_image{
-    float: left;
-    padding: 8px 4px 8px 8px;
-    width: 32.5%;
-}
-.item_img{
-    line-height: 0;
-    overflow: hidden;
-}
-img {
-    max-width: 100%;
-}
-.item_galeria .item_column{
-    height: 100%;
-    display: flex;
-}
-.item_detalles{
-    position: relative;
-    padding: 8px 0 4px;
-    margin: 6px 8px 8px 4px;
-    float: none;
-    border-right: 1px solid #ebeced;
-}
-.item_name{
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1.25;
-    width: 100%;
-}
-.item_name .name{
-    margin-top: 0;
-    font-size: 20px;
-    width: 100%;
-    float: left;
-    overflow: hidden;
-}
-.item_stars{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    margin: 0 8px 0 0;
-}
-.item .text{
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
-    top: -1px;
-    margin-left: 0;
-    margin-right: 8px;
-}
-
-.item .parrafo{
-    line-height: 1.25;
-    margin: 0 160px 0 0;
-    overflow: hidden;
-    font-size: 14px;
-}
-.button-info{
-    width: 52%;
-    padding: 23px 56px 0px 62px;
-}
-.item .button-info .btn-info{
-    width: 100%;
-}
-.button-info .btn-info{
-    overflow: hidden;
-    width: 52%;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    background-repeat: no-repeat;
-}
-.btn{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    overflow: hidden;
-    margin: 4px 0;
-    border-radius: 2px;
-    text-align: center;
-    font-weight: 700;
-    height: auto;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-
 
 /*pc pequeña*/
 @media only screen and (min-width:992px)and (max-width:1199px){
@@ -566,9 +617,22 @@ img {
     .reservacion{
         top: 30%;
     }
+    .pag-inicio .DAECA2 h2 {
+        font-size: 62px;
+        margin-top: -25%;
+        margin-left: 31px;
+    }
+    .pag-inicio .DAECA2 h3 {
+        font-size: 25px;
+        margin-top: -2%;
+        margin-left: 46px;
+    }
     /*FOOTER*/
+    .footer{
+        margin-top: -27px;
+    }
     .footer .content1{
-        right: 40%;
+        right: 151px;
     }
     
     .footer .content1 .linksfo li a{
@@ -579,7 +643,7 @@ img {
     }
     
     .footer .content2{
-        right: 0;
+        right: 30px;
     }
     
     .footer .content2 .facebook, .insta, .twitter{
@@ -618,7 +682,7 @@ img {
     nav{
         position: fixed;
         z-index: 3;
-        background:#008080;
+        background: #b92b27;
         width: 100%;
         line-height: 60px;
     }
@@ -626,9 +690,36 @@ img {
     .reservacion{
         top: 25%;
     }
+    .pag-inicio .DAECA2 h2 {
+        margin-left: 20px;
+        margin-top: -20%;
+    }
+    .pag-inicio .DAECA2 h3 {
+        margin-top: -15px;
+        margin-left: 31px;
+        font-size: 20px;
+    }
+    /*****ICONOS*********************/
+    .icon_servicios .iconh .responsive-img {
+        width: 21%;
+        margin-left: 0px;
+        }
+    .icon_servicios {
+        margin-left: 0px;
+        margin-right: 56px;
+        }
+        
+
+    .icon_servicios .iconh .tser{
+            font-size: 14px;
+        }
+    
      /*FOOTER*/
+     .footer{
+        margin-top: -27px;
+     }
      .footer .content1{
-        right: 40%;
+        right: 65px;
     }
     
     .footer .content1 .linksfo li a{
@@ -639,12 +730,12 @@ img {
     }
     
     .footer .content2{
-        right: 0;
+        right: 7px;
+        top: -12px;
     }
-    
     .footer .content2 .facebook, .insta, .twitter{
-            margin-left: 121px;
-            margin-top: 20px;
+        margin-left: 121px;   
+        margin-top: 20px;
     } 
     .footer .content2 .facebook .responsive-img, .insta .responsive-img, .twitter .responsive-img{
         top: 6px;
@@ -669,51 +760,77 @@ img {
 /*moviles*/
 @media only screen and (max-width:600px){
     /*BARRA RESPONSIVE*/
-    .nav-wrapper .brand-logo{
+    .nav-wrapper .brand-logo {
         width: 172px;
         position: relative;
         top: -15px;    
     }
-    .nav-wrapper .material-icons{
+    .nav-wrapper .material-icons {
         display: block;
     }
     nav{
         position: fixed;
         z-index: 3;
-        background: #008080;
+        background: #b92b27;
         width: 100%;
         line-height: 60px;
     }
     nav ul {
         max-height: 0px;
         background: #0F1D2E;
-  }
+    }
 
-  nav.black ul {
+    nav.black ul {
         background: #0F1D2E;
-  }
+    }
 
-  .showing {
+    .showing {
         max-height: 34em;
-  }
+    }
 
-  nav ul li {
+    nav ul li {
         box-sizing: border-box;
         width: 100%;
         padding: 24px;
         text-align: center;
-  }
-
-  .menu-icon {
-        display: block;
-  }
-  .info{
-        width: 90%;
-        
     }
-    .info p{
+
+    .menu-icon {
+        display: block;
+    }
+    .pag-inicio .DAECA2 h2 {
+        margin-top: -36%;
+        font-size: 33px;
+        margin-left: 20px;
+    }
+    .pag-inicio .DAECA2 h3{
+        font-size: 12px;
+        margin-top: -11px;
+        margin-left: 32px;
+    }
+    .info {
+        width: 90%;
+    }
+    .info p {
         text-align: justify;
         margin-left: 40px;
         margin-right: 0px;
+    }
+    .icon_servicios .iconh .responsive-img {
+        width: 18%;
+        margin-left: 0px;
+    }
+    .icon_servicios {
+        margin-left: -35px;
+        margin-right: 56px;
+    }
+    .icon_servicios .iconh .tser{
+            font-size: 11px;
+    }
+    .footer{
+        margin-top: -27px;
+    }
+    .footer .content2{
+        display: none;
     }
 }

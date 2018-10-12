@@ -3,7 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var instancesnav = M.Sidenav.init(elemsnav);
     
   });
-
+  $('.toggle').click(function(){
+    $('.formulario').animate({
+        height: "toggle",
+        'padding-top': 'toggle',
+        'padding-bottom': 'toggle',
+        opacity: 'toggle'
+    }, "slow");
+});
 
   var config = {
     apiKey: "AIzaSyB3G1sNiRiMGXR48wR0FAjlF_zaIsMA6c8",

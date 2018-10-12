@@ -6,104 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/materialize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../js/materialize.js">
     <title>Registro Administrador</title>
 </head>
 
-<header>
-    <!-- barra de navegacion -->
+<body class="FONDO1">
 
-    <nav>
-        <div class="nav-wrapper container">
+    <section class="loggin">
+    <center>
+        <div class="form">
+            <div class="toggle">
+                <span> Crea Cuenta</span>
+            </div>
 
-            <a href="#!" class="brand-logo">
-                <img class="logo-DAECA" src="../assets/logo-DAECA.png" alt="">
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="reservas.html">Habitaciones</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="login.html">Iniciar Sesión</a>
-                </li>
-            </ul>
+            <div class="formulario">
+                <h2>Iniciar Sesión</h2>
+                <form action="#" method="post" class="ingresar">
+                    <input type="text" name="email2" placeholder="Email" required>
+                    <input type="password" name="pass2" placeholder="Contraseña" required>
+                    <input type="submit" value="Iniciar Sesión" onclick="ingreso()">
+                </form>
+            </div>
+
+            <div class="formulario">
+                <h2>Crea tu Cuenta</h2>
+                <form action="#" method="post" class="form-register">
+                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    <input type="password" name="pass" placeholder="Contraseña" required>
+                    <input type="email" name="email" placeholder="Correo" required>
+                    <input type="number" name="telefono" placeholder="Teléfono" required>
+                    <input type="number" name="cedula" placeholder="Cedula" required>
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>Rol</option>
+                          <option value="1">Administrador</option>
+                          <option value="2">Recepcionista</option>
+                          <option value="3">Cliente</option>
+                        </select>
+                      </div>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+
+            <div class="reset-password">
+                <a href="#"> Olvide mi Contraseña?</a>
+            </div>
+
         </div>
-    </nav>
+    </center>
+</section>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li>
-            <a href="../index.html">Inicio</a>
-        </li>
-        <li>
-            <a href="reservas.html">Habitaciones</a>
-        </li>
-        <li>
-            <a href="servicios.html">Servicios</a>
-        </li>
-        <li>
-            <a href="login.html">Iniciar Sesión</a>
-        </li>
-    </ul>
-</header>
 
-<body class="fondo1">
-
-    <h1 class="texto">FORMULARIO DE REGISTRO</h1>
-
-    <form action="Login.html" method="post" class="form-register">
-        <div class="contenedor-inputs">
-            <div class="caja">
-                <i class="material-icons iconos-form">picture_in_picture</i>
-                <input type="number" name="cedula" placeholder="Ingrese cedula" class="cajas2" required="">
-            </div>
-            <div class="div-cajas">
-                <i class="material-icons iconos-form">account_circle</i>
-                <input class="cajas" type="text" name="nombre" placeholder="Ingrese Nombre y Apellidos" required="">
-                <br>
-            </div>
-            <div class="div-cajas">
-                <i class="material-icons iconos-form">email</i>
-                <input class="cajas" type="email" name="email" placeholder="Correo Electronico" required="">
-            </div>
-            <div class="div-cajas">
-                <i class="material-icons iconos-form">lock</i>
-                <input class="cajas" type="password" name="clave" placeholder="Contraseña" required="">
-            </div>
-            <div class="div-cajas">
-                <i class="material-icons iconos-form">phone</i>
-                <input class="cajas" type="number" name="telefono" placeholder="Teléfono" required="">
-            </div>
-        </div>
-        <select class="browser-default">
-            <option value="" disabled selected>Rol</option>
-            <option value="1">Administrador</option>
-            <option value="2">Recepcionista</option>
-            <option value="3">Cliente</option>
-          </select>
-        <center>
-            <input class="btn waves-effect" type="submit" value="Guardar">
-        </center>
-
-    </form>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/materialize.js"></script>
-    <script src="../js/sweetalert.min.js"></script>
     <script src="../js/reg_adm.js"></script>
-
-
 
 </body>
 

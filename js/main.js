@@ -15,25 +15,6 @@ var config = {
   };
     firebase.initializeApp(config);
   
-/***********************BARRA DE NAVEGACION ****************************************************************/
-
-$(document).ready(function() {
-  $(".menu-icon").on("click", function() {
-        $("nav-wrapper").toggleClass("showing");
-  });
-});
-
-// Scrolling Effect
-
-$(window).on("scroll", function() {
-  if($(window).scrollTop()) {
-        $('nav-wrapper').addClass('black');
-  }
-
-  else {
-        $('nav-wrapper').removeClass('black');
-  }
-})
   
 /*++++++++FECHA ***************************************/
 document.addEventListener('DOMContentLoaded', function() {
