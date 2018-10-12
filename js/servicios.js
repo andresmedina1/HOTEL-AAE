@@ -4,3 +4,4 @@ document.addEventListener('DOMContentLoaded', function() {
   var instancesnav = M.Sidenav.init(elemsnav);
   
 });
+ AOS.init();
