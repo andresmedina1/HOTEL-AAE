@@ -72,8 +72,8 @@ nav{
     letter-spacing: 1px;
 }
 .form .toggle:hover{
-    border-top: 2px solid rgba(15, 29, 46, 0.73);
-    border-bottom: 2px solid rgba(15, 29, 46, 0.69);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 /*fin de login*/
@@ -140,6 +140,9 @@ nav{
     text-decoration: none;
     font-size: 16px;
 }
+.form .reset-password a:hover{
+    color: rgba(255, 255, 255, 0.45);
+}
 
 .form .formulario{
     padding: 40px;
@@ -180,7 +183,7 @@ nav{
 }
 .reservacion .clase1{
     background-color: rgba(15, 29, 46, 0.73) ;
-    width: 200px;
+    width: auto;
     height: 50px;
     border-radius: 5px;
 }
