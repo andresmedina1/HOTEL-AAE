@@ -49,3 +49,8 @@ $formRegister.addEventListener('submit', async function (event) {
         console.log(e)
     })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems1 = document.querySelectorAll('select');
+    var instances1 = M.FormSelect.init(elems1);
+  });

@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width: 100%;
+    width: 87%;
     margin-bottom: 8px;
     box-shadow: 0 1px 4px rgba(41,51,57,.5);
     color: #37454d;
@@ -28,12 +28,16 @@
 }
 .item_image{
     float: left;
-    padding: 8px 4px 8px 8px;
-    width: 32.5%;
+    padding: 18px 4px 4px 15px;
+    width: 46%;
 }
 .item_img{
     line-height: 0;
     overflow: hidden;
+}
+.item_img h3{
+    margin-top: 7px;
+    font-size: 20px;
 }
 img {
     max-width: 100%;
@@ -45,9 +49,8 @@ img {
 .item_detalles{
     position: relative;
     padding: 8px 0 4px;
-    margin: 6px 8px 8px 4px;
+    margin: 20px 13px 8px 13px;  
     float: none;
-    border-right: 1px solid #ebeced;
 }
 .item_name{
     display: inline-block;
@@ -55,13 +58,7 @@ img {
     line-height: 1.25;
     width: 100%;
 }
-.item_name .name{
-    margin-top: 0;
-    font-size: 20px;
-    width: 100%;
-    float: left;
-    overflow: hidden;
-}
+
 .item_stars{
     align-items: center;
     display: flex;
@@ -86,31 +83,24 @@ img {
 }
 .button-info{
     width: 52%;
-    padding: 23px 56px 0px 62px;
-}
-.item .button-info .btn-info{
-    width: 100%;
+    padding: 23px 56px 0px 62px
 }
 .button-info .btn-info{
-    overflow: hidden;
-    width: 52%;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    background-repeat: no-repeat;
+    margin-left: -57%;
 }
-.btn{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    overflow: hidden;
-    margin: 4px 0;
-    border-radius: 2px;
-    text-align: center;
-    font-weight: 700;
-    height: auto;
-    text-decoration: none;
+.button-info .btn-info2{
+    margin-left: 137%;
+    margin-top: -58%;
+}
+.button-info a{
     color: #fff;
-    cursor: pointer;
+    font-size: 16px;
+}
+.habitacion .fechas .datepicker{
+    margin-top: 15px;
+    width: 38%;
+    margin-right: 36px;
+}
+.btn-info2{
+    margin-top: 20px;
 }
