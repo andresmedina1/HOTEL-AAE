@@ -23,9 +23,17 @@
 
             <div class="formulario">
                 <h2>Registrar Habitacion</h2>
-                <form action="#" method="post" class="form-register">
+                <form action="#" method="post" id="formulario" class="form-register">
                     <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="text" name="acomoda" placeholder="Acomodacion" required>
+                    <div class="input-field col s12">
+                            <select name="acomod">
+                              <option value="" disabled selected>Acomodacion</option>
+                              <option value="Suite">Suite</option>
+                              <option value="Individual">Individual</option>
+                              <option value="Familiar">Familiar</option>
+                              <option value="Doble">Doble</option>
+                            </select>
+                          </div>
                     <input type="text" name="descrip" placeholder="Descripcion" required>
 
                     <input type="submit" value="Registrar">

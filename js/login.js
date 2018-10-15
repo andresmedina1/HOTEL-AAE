@@ -23,6 +23,7 @@ var config = {
   firebase.initializeApp(config);
 
   const $formRegister = document.querySelector('.form-register')
+  const $formIngresar = document.querySelector('.ingresar')
   var firebaseDB = firebase.database()
   var refUsers = firebase.database().ref('users')
   var user
@@ -51,21 +52,28 @@ var config = {
   })
   
 
+  $formIngresar.addEventListener('submit', ingreso)
+
 
   
-  function ingreso(){
-    var email2 = document.getElementById('email2').value;
-    var pass2 = document.getElementById('pass2').value;
+  async function ingreso (ev) {
+      console.log(arguments)
+      console.log(ev)
+    ev.preventDefault()
+   const dataForm = new FormData($formIngresar)
 
-    firebase.auth().signInWithEmailAndPassword(email2, pass2)
+    const x = await firebase.auth().signInWithEmailAndPassword(dataForm.get('email2'), dataForm.get('pass2'))
     .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log(errorCode);
-        console.log(errorMessage);
+        alert(errorMessage)
         // ...
       });
+      if (x) {
+        location.href = '..'
+      }
 }
 
 
