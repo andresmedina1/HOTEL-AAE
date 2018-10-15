@@ -40,7 +40,7 @@ $formRegister.addEventListener('submit', async function (event){
         cedula: dataForm.get('cedula'),
         telefono: dataForm.get('telefono'),
         correo: dataForm.get('email'),
-        rol: 'administrador'
+        rol: dataForm.get('rol')
     }
     firebase.database().ref(`users/${user.user.uid}`).set(newUser).then(()=> {
         swal("Todo bien!", "ya te as registrado!", "success")

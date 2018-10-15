@@ -72,7 +72,7 @@ var config = {
         // ...
       });
       if (x) {
-        location.href = '..'
+        location.href = '../index.html'
       }
 }
 

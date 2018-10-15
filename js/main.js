@@ -17,7 +17,7 @@ var app = new Vue (
       if (user) {
         let sesion = await firebase.database().ref(`users/${user.uid}`).once('value')
         this.sesion = sesion.val()
-        console.log(this)
+        console.log(this.sesion)
       } else {
        this.sesion = null
       }
@@ -67,6 +67,10 @@ var app = new Vue (
     cancel () {
       this.rooms = [];
       this.selected = []
+    },
+    logOut () {
+      firebase.auth().signOut()
+      window.location.href = ''
     },
     updateSelction (room) {
       let lastLength = this.selected.length
